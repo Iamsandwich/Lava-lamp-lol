@@ -93,7 +93,7 @@
         ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
 
         input[type=range] {
-            -webkit-appearance: none;
+         /*   -webkit-appearance: none;*/
             width: 100%;
             background: transparent;
         }
@@ -180,13 +180,13 @@
             
             <!-- Actions -->
             <div class="grid grid-cols-2 gap-3">
-                <button id="btn-randomize" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Randomize Variables</button>
+                <button id="btn-randomize" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Randomize Lava settings</button>
 
-              <a href="black.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Black backdrop</button></a>
+            <a href="black.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Black backdrop</button></a>
             <a href="index.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Purple backdrop</button></a> 
             <a href="green.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Green backdrop</button></a> 
             <a href="blue.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Blue backdrop</button></a>  
-            <a href="white.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">White backdrop</button></a>  
+            <a href="white.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">White backdrop</button></a>
             <a href="bright_green.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Bright green backdrop</button></a>
             <a href="lilac.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Lilac backdrop</button></a>
             <a href="yellow.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Yellow backdrop</button></a>
@@ -197,10 +197,7 @@
             <a href="grey.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Gray backdrop</button></a>
 
 
-
-        <button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20" onclick="RedLava()">Red Lava!</button>
-        
-                <button id="btn-reset" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5">Reset Defaults</button>
+            <button id="btn-reset" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5">Reset Defaults</button>
                 <button id="btn-export-4k" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5">Export 4K</button>
             </div>
 
@@ -339,7 +336,7 @@
             }
             
             if (depth >= 15.0) {
-                fragColor = vec4(1.2, 1.2, 1.2, 2.0);
+                fragColor = vec4(0.49, 0.0, 0.7, 1.0);
                 return;
             }
             
@@ -653,22 +650,6 @@
                 state.colorOffsetZ = Math.random() * 6.28;
                 state.depthAtten = 0.05 + Math.random() * 0.25;
                 state.timeScale = 0.05;// + Math.random() * 1.8;
-            }
-
-            RedLava() {
-                state.numSpheres = 16; 
-                state.smoothness = 2;
-                state.radiusMin = 0.15;
-                state.radiusMax = 2.55;
-                state.posSpreadX = 7.0;
-                state.posSpreadY = 6.6;
-                state.posSpreadZ = 2;
-                state.colorSpeed = 0;
-                state.colorOffsetX = 4.67;
-                state.colorOffsetY = 1.63;
-                state.colorOffsetZ = 0;
-                state.depthAtten = 0.08;
-                state.timeScale = 0.05;
             }
 
             async triggerFadeRandomize() {
