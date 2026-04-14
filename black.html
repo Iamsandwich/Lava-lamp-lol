@@ -189,6 +189,36 @@
     <img src="IMG/lamp2.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
     <img src="IMG/lamp2.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
     </div>
+
+     <div id="base3" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp3.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp3.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp3.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+
+    <div id="base4" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp4.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp4.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp4.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+
+    <div id="base5" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp5.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp5.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp5.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+    
+    <div id="base6" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp6.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp6.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp6.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+
+    <div id="base7" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp7.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp7.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp7.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
   
     <!-- Canvas Container -->
     <canvas id="glcanvas"></canvas>
@@ -225,9 +255,9 @@
             
             <!-- Actions -->
             <div class="grid grid-cols-2 gap-3">
-                <button id="btn-randomize" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Randomize Variables</button>
-               
-               <a href="black.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Black backdrop</button></a>
+                <button id="btn-randomize" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Randomize Lava settings</button>
+
+            <a href="black.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Black backdrop</button></a>
             <a href="index.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Purple backdrop</button></a> 
             <a href="green.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Green backdrop</button></a> 
             <a href="blue.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Blue backdrop</button></a>  
@@ -235,20 +265,26 @@
             <a href="bright_green.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Bright green backdrop</button></a>
             <a href="lilac.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Lilac backdrop</button></a>
             <a href="yellow.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Yellow backdrop</button></a>
-            <a href="salmon.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Salmon backdrop</button></a> 
+            <a href="salmon.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Salmon backdrop</button></a>
             <a href="Cyan.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Cyan backdrop :3</button></a>
             <a href="ultraviolet.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Ultraviolet backdrop</button></a>
             <a href="pink.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Pink backdrop</button></a>
             <a href="grey.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Gray backdrop</button></a>
             <a href="chocolate.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Chocolate backdrop</button></a>
-            <button onclick="Glitter()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Glitter</button></a>
-            <button onclick="Rainbow()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Rainbow</button></a>
-            <button onclick="rocking()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Rocks</button></a>
-            <button onclick="purpling()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Purple gradient</button></a>
-            <button onclick="waving()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Wavy</button></a>
-            <button onclick="scaling()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Scales</button></a>
-            <button onclick="thebase()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 1</button></a>
-            <button onclick="thebase2()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 2</button></a>
+            <button onclick="Glitter()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Glitter</button>
+            <button onclick="Rainbow()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Rainbow</button>
+            <button onclick="rocking()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Rocks</button>
+            <button onclick="purpling()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Purple gradient</button>
+            <button onclick="waving()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Wavy</button>
+            <button onclick="scaling()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Scales</button>
+            <button onclick="thebase()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 1</button>
+            <button onclick="thebase2()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 2</button>
+            <button onclick="thebase3()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 3</button>
+            <button onclick="thebase4()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 4</button>
+            <button onclick="thebase5()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 5</button>
+            <button onclick="thebase6()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 6</button>
+            <button onclick="thebase7()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 7</button>
+
 
                 <button id="btn-reset" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5">Reset Defaults</button>
                 <button id="btn-export-4k" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5">Export 4K</button>
@@ -307,7 +343,7 @@
         </div>
     </div>
 
-<script>
+ <script>
     let a;
     function Glitter() {
         
@@ -316,7 +352,6 @@
         if (a > 0){
            
         document.getElementById("sparkles").style.opacity = "0%";
-        
         a = 0;
         console.log("glitter off");
         console.log(a);
@@ -378,7 +413,7 @@
     
     };
 
-    let purplegard1;
+     let purplegard1;
     function purpling() {
         
         console.log(purplegard1);
@@ -494,7 +529,120 @@
     
     };
 
+    let thebaselamp3;
+    function thebase3() {
+        
+        console.log(thebaselamp3);
 
+        if (thebaselamp3){
+           
+        document.getElementById("base3").style.opacity = "0%";
+        thebaselamp3 = 0;
+        console.log("thebase3 off");
+        console.log(thebaselamp3);
+
+        }
+
+        else{
+            document.getElementById("base3").style.opacity = "100%";
+            thebaselamp3 = 1;
+            console.log("thebase3 on");
+            console.log(thebaselamp3);
+        };
+    
+    };
+
+    let thebaselamp4;
+    function thebase4() {
+        
+        console.log(thebaselamp4);
+
+        if (thebaselamp4){
+           
+        document.getElementById("base4").style.opacity = "0%";
+        thebaselamp4 = 0;
+        console.log("thebase4 off");
+        console.log(thebaselamp4);
+
+        }
+
+        else{
+            document.getElementById("base4").style.opacity = "100%";
+            thebaselamp4 = 1;
+            console.log("thebase4 on");
+            console.log(thebaselamp4);
+        };
+    
+    };
+
+    let thebaselamp5;
+    function thebase5() {
+        
+        console.log(thebaselamp5);
+
+        if (thebaselamp5){
+           
+        document.getElementById("base5").style.opacity = "0%";
+        thebaselamp5 = 0;
+        console.log("thebase5 off");
+        console.log(thebaselamp5);
+
+        }
+
+        else{
+            document.getElementById("base5").style.opacity = "100%";
+            thebaselamp5 = 1;
+            console.log("thebase5 on");
+            console.log(thebaselamp5);
+        };
+    
+    };
+
+    let thebaselamp6;
+    function thebase6() {
+        
+        console.log(thebaselamp6);
+
+        if (thebaselamp6){
+           
+        document.getElementById("base6").style.opacity = "0%";
+        thebaselamp6 = 0;
+        console.log("thebase6 off");
+        console.log(thebaselamp6);
+
+        }
+
+        else{
+            document.getElementById("base6").style.opacity = "100%";
+            thebaselamp6 = 1;
+            console.log("thebase6 on");
+            console.log(thebaselamp6);
+        };
+    
+    };
+
+    let thebaselamp7;
+    function thebase7() {
+        
+        console.log(thebaselamp7);
+
+        if (thebaselamp7){
+           
+        document.getElementById("base7").style.opacity = "0%";
+        thebaselamp7 = 0;
+        console.log("thebase7 off");
+        console.log(thebaselamp7);
+
+        }
+
+        else{
+            document.getElementById("base7").style.opacity = "100%";
+            thebaselamp7 = 1;
+            console.log("thebase7 on");
+            console.log(thebaselamp7);
+        };
+    
+    };
 
 </script>
 
