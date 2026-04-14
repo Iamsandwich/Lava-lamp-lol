@@ -71,7 +71,7 @@
             font-family: 'Inter', sans-serif;
             margin: 0;
             overflow: hidden;
-            background: #943852;
+            background: image(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg0.etsystatic.com%2F187%2F0%2F9891158%2Fil_340x270.1235498012_oyap.jpg&f=1&nofb=1&ipt=68df7c2904af314c6808fc75926f52d6a4eadd71256af34109e692716a0717c3)
             user-select: none;
             -webkit-user-select: none;
             touch-action: none;
@@ -144,7 +144,7 @@
     </style>
 </head>
 <body class="text-white antialiased"><h1 style="display: none;">Interactive 3D Lava Lamp Simulation</h1>
-
+    
     <div id="sparkles" style="opacity: 0%; pointer-events: none;">
 
     <img src="IMG/glotter black.jpg" alt="mm glotter" style="opacity: 150%; min-width: 100em; position: absolute; display: block;">
@@ -165,7 +165,7 @@
 
     </div>
   
-<div id="mermaid" style="opacity: 0%; pointer-events: none;">
+    <div id="mermaid" style="opacity: 0%; pointer-events: none;">
     <img src="IMG/mermaid scales.jpg" alt="mm merm" style="opacity: 40%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
     </div>
 
@@ -496,7 +496,11 @@
 
 </script>
 
+
     <script>
+        
+
+
         // --- WebGL & Shader Code ---
         const vertexShaderSource = `#version 300 es
         in vec4 a_position;
@@ -578,7 +582,7 @@
             }
             
             if (depth >= 15.0) {
-                fragColor = vec4(0.2, 0.0, 0.2, 1.0);
+                fragColor = vec4(1.1, 0.5, 2.0, 0.2);
                 return;
             }
             

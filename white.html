@@ -145,6 +145,50 @@
 </head>
 <body class="text-white antialiased"><h1 style="display: none;">Interactive 3D Lava Lamp Simulation</h1>
   
+    <div id="sparkles" style="opacity: 0%; pointer-events: none;">
+
+    <img src="IMG/glotter black.jpg" alt="mm glotter" style="opacity: 150%; min-width: 100em; position: absolute; display: block;">
+    <img src="IMG/glotter.gif" alt="mm glotter" style="opacity: 70%; min-width: 100em; position: absolute; display: block;">
+
+    </div>
+
+    <div id="rainbow" style="opacity: 0%; pointer-events: none;">
+
+    <img src="IMG/rainbow.jpg" alt="mm rainblow" style="opacity: 150%; min-width: 100em; position: absolute; display: block;">
+   </div>
+
+
+   <div id="rocks" style="opacity: 0%; mix-blend-mode: color-dodge; pointer-events: none;">
+
+    <img src="IMG/colorful rocks.jpg" alt="mm rock" style="opacity: 150%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
+   
+
+    </div>
+    
+    <div id="mermaid" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/mermaid scales.jpg" alt="mm merm" style="opacity: 40%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
+    </div>
+
+    <div id="purple1" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/purple pink gradient 1.jpg" alt="mm poyple" style="opacity: 150%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
+    </div>
+
+    <div id="waves1" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/blue pink waves.jpg" alt="mm wavy" style="opacity: 150%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
+    </div>
+
+    <div id="base1" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp1.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp1.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp1.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+
+    <div id="base2" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp2.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp2.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp2.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+  
     <!-- Canvas Container -->
     <canvas id="glcanvas"></canvas>
 
@@ -180,13 +224,13 @@
             
             <!-- Actions -->
             <div class="grid grid-cols-2 gap-3">
-                <button id="btn-randomize" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Randomize Variables</button>
+                <button id="btn-randomize" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Randomize Lava settings</button>
 
-              <a href="black.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Black backdrop</button></a>
+            <a href="black.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Black backdrop</button></a>
             <a href="index.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Purple backdrop</button></a> 
             <a href="green.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Green backdrop</button></a> 
             <a href="blue.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Blue backdrop</button></a>  
-            <a href="white.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">White backdrop</button></a>  
+            <a href="white.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">White backdrop</button></a>
             <a href="bright_green.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Bright green backdrop</button></a>
             <a href="lilac.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Lilac backdrop</button></a>
             <a href="yellow.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Yellow backdrop</button></a>
@@ -195,11 +239,18 @@
             <a href="ultraviolet.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Ultraviolet backdrop</button></a>
             <a href="pink.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Pink backdrop</button></a>
             <a href="grey.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Gray backdrop</button></a>
-             <a href="chocolate.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Chocolate backdrop</button></a>
+            <a href="chocolate.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Chocolate backdrop</button></a>
+            <button onclick="Glitter()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Glitter</button></a>
+            <button onclick="Rainbow()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Rainbow</button></a>
+            <button onclick="rocking()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Rocks</button></a>
+            <button onclick="purpling()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Purple gradient</button></a>
+            <button onclick="waving()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Wavy</button></a>
+            <button onclick="scaling()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Scales</button></a>
+            <button onclick="thebase()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 1</button></a>
+            <button onclick="thebase2()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 2</button></a>
 
 
-        <button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20" onclick="RedLava()">Red Lava!</button>
-        
+
                 <button id="btn-reset" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5">Reset Defaults</button>
                 <button id="btn-export-4k" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5">Export 4K</button>
             </div>
@@ -256,6 +307,194 @@
             </div>
         </div>
     </div>
+
+    <script>
+    let a;
+    function Glitter() {
+        
+        console.log(a);
+
+        if (a > 0){
+           
+        document.getElementById("sparkles").style.opacity = "0%";
+        a = 0;
+        console.log("glitter off");
+        console.log(a);
+
+        }
+
+        else{
+            document.getElementById("sparkles").style.opacity = "30%";
+            a = 1;
+            console.log("glitter on");
+            console.log(a);
+        };
+    
+    };
+
+    let r;
+    function Rainbow() {
+        
+        console.log(r);
+
+        if (r > 0){
+           
+        document.getElementById("rainbow").style.opacity = "0%";
+        r = 0;
+        console.log("Rainbow off");
+        console.log(r);
+
+        }
+
+        else{
+            document.getElementById("rainbow").style.opacity = "30%";
+            r = 1;
+            console.log("Rainbow on");
+            console.log(r);
+        };
+    
+    };
+
+    let rocks;
+    function rocking() {
+        
+        console.log(rocks);
+
+        if (rocks > 0){
+           
+        document.getElementById("rocks").style.opacity = "0%";
+        rocks = 0;
+        console.log("rocks off");
+        console.log(rocks);
+
+        }
+
+        else{
+            document.getElementById("rocks").style.opacity = "20%";
+            rocks = 1;
+            console.log("rocks on");
+            console.log(rocks);
+        };
+    
+    };
+
+    let purplegard1;
+    function purpling() {
+        
+        console.log(purplegard1);
+
+        if (purplegard1 > 0){
+           
+        document.getElementById("purple1").style.opacity = "0%";
+        purplegard1 = 0;
+        console.log("purplegard1 off");
+        console.log(purplegard1);
+
+        }
+
+        else{
+            document.getElementById("purple1").style.opacity = "20%";
+            purplegard1 = 1;
+            console.log("purplegard1 on");
+            console.log(purplegard1);
+        };
+    
+    };
+
+
+    let wave;
+    function waving() {
+        
+        console.log(wave);
+
+        if (wave){
+           
+        document.getElementById("waves1").style.opacity = "0%";
+        wave = 0;
+        console.log("wave off");
+        console.log(wave);
+
+        }
+
+        else{
+            document.getElementById("waves1").style.opacity = "30%";
+            wave = 1;
+            console.log("wave on");
+            console.log(wave);
+        };
+    
+    };
+
+    let thescales;
+    function scaling() {
+        
+        console.log(thescales);
+
+        if (thescales){
+           
+        document.getElementById("mermaid").style.opacity = "0%";
+        thescales = 0;
+        console.log("thescales off");
+        console.log(thescales);
+
+        }
+
+        else{
+            document.getElementById("mermaid").style.opacity = "30%";
+            thescales = 1;
+            console.log("thescales on");
+            console.log(thescales);
+        };
+    
+    };
+
+    let thebase1;
+    function thebase() {
+        
+        console.log(thebase1);
+
+        if (thebase1){
+           
+        document.getElementById("base1").style.opacity = "0%";
+        thebase1 = 0;
+        console.log("thebase1 off");
+        console.log(thebase1);
+
+        }
+
+        else{
+            document.getElementById("base1").style.opacity = "100%";
+            thebase1 = 1;
+            console.log("thebase1 on");
+            console.log(thebase1);
+        };
+    
+    };
+
+    let thebaselamp2;
+    function thebase2() {
+        
+        console.log(thebaselamp2);
+
+        if (thebaselamp2){
+           
+        document.getElementById("base2").style.opacity = "0%";
+        thebaselamp2 = 0;
+        console.log("thebase2 off");
+        console.log(thebaselamp2);
+
+        }
+
+        else{
+            document.getElementById("base2").style.opacity = "100%";
+            thebaselamp2 = 2;
+            console.log("thebase2 on");
+            console.log(thebaselamp2);
+        };
+    
+    };
+
+</script>
 
     <script>
         // --- WebGL & Shader Code ---
