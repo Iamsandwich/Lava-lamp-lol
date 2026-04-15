@@ -145,11 +145,23 @@
 </head>
 <body class="text-white antialiased"><h1 style="display: none;">Interactive 3D Lava Lamp Simulation</h1>
 
-    <div id="sparkles" style="opacity: 0%; pointer-events: none;">
+<div id="sparkles" style="opacity: 0%; pointer-events: none;">
 
     <img src="IMG/glotter black.jpg" alt="mm glotter" style="opacity: 150%; min-width: 100em; position: absolute; display: block;">
     <img src="IMG/glotter.gif" alt="mm glotter" style="opacity: 70%; min-width: 100em; position: absolute; display: block;">
 
+    </div>
+
+    <div id="sparkles2" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/glotter2.gif" alt="mm glotter" style="opacity: 150%; height: 100vh; position: absolute; display: block; mix-blend-mode: screen;">
+    <img src="IMG/glotter2.gif" alt="mm glotter" style="opacity: 150%; height: 100vh; position: absolute; display: block; left: 75vh; mix-blend-mode: screen;">
+    <img src="IMG/glotter2.gif" alt="mm glotter" style="opacity: 150%; height: 100vh; position: absolute; display: block; left: 150vh; mix-blend-mode: screen;">
+    </div>
+
+    <div id="Bubbles" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/bubbles.gif" alt="mm glotter" style="opacity: 150%; height: 100vh; position: absolute; display: block; mix-blend-mode: luminosity;">
+    <img src="IMG/bubbles.gif" alt="mm glotter" style="opacity: 150%; height: 100vh; position: absolute; display: block; left: 70vh; mix-blend-mode: luminosity;">
+    <img src="IMG/bubbles.gif" alt="mm glotter" style="opacity: 150%; height: 100vh; position: absolute; display: block; left: 140vh; mix-blend-mode: luminosity;">
     </div>
 
     <div id="rainbow" style="opacity: 0%; pointer-events: none;">
@@ -176,6 +188,57 @@
     <div id="waves1" style="opacity: 0%; pointer-events: none;">
     <img src="IMG/blue pink waves.jpg" alt="mm wavy" style="opacity: 150%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
     </div>
+
+    <div id="frosty" style="opacity: 0%; pointer-events: none; width: 100vw; height: 100vh; backdrop-filter: blur(10px); position: absolute; display: block;" >
+
+    </div>
+
+    <div id="frosty2" style="opacity: 0%; pointer-events: none; width: 100vw; height: 100vh; backdrop-filter: blur(10px); position: absolute; display: block;" >
+    <img src="IMG/frosted1.jpg" alt="mm frost" style="opacity: 20%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
+    </div>
+
+    <div id="frosty3" style="opacity: 0%; pointer-events: none; width: 100vw; height: 100vh; backdrop-filter: blur(100px); position: absolute; display: block;" >
+    <img src="IMG/frosted2.png" alt="mm frost" style="opacity: 10%; min-width: 100em; position: absolute; display: block; mix-blend-mode: luminosity;">
+    <img src="IMG/frosted2.png" alt="mm frost" style="opacity: 20%; min-width: 100em; position: absolute; display: block; mix-blend-mode: darken;">
+    <img src="IMG/frosted2.png" alt="mm frost" style="opacity: 30%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
+    </div>
+
+     <div id="frosty4" style="opacity: 0%; pointer-events: none; width: 100vw; height: 100vh; backdrop-filter: blur(10px); position: absolute; display: block;" >
+    <img src="IMG/frosted3.jpg" alt="mm frost" style="opacity: 15%; min-width: 100em; position: absolute; display: block; mix-blend-mode: luminosity;">
+    </div>
+
+    
+  <!--<div id="scaleytest" style="opacity: 100%; width: 100%; height: 100%; pointer-events: none; position: absolute; display: block;  backdrop-filter: brightness(1.1) url(#displacementFilter);">
+      <svg style="display:none;">
+        <filter id="displacementFilter">
+            <feImage href="IMG/scales test.svg"></feImage>
+
+        <feDisplacementMap in="SourceGraphic"
+        scale="50" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+        </filter>
+      </svg>
+    </div>  
+!-->
+
+
+    <div id="frosty5" style="opacity: 0%; pointer-events: none; width: 1vw; position: absolute; display: block;" >
+    <img src="IMG/diamond shapes.jpg" alt="mm frost" style="opacity: 35%; min-width: 100em; position: absolute; display: block; mix-blend-mode: linear;">
+    <img src="IMG/diamond shapes.jpg" alt="mm frost" style="opacity: 20%; min-width: 100em; position: absolute; display: block; mix-blend-mode: luminosity;">
+    <img src="IMG/diamond shapes.jpg" alt="mm frost" style="opacity: 50%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
+    </div>
+
+    <div id="frosty6" style="opacity: 0%; pointer-events: none; width: 1vw; position: absolute; display: block;" >
+    <img src="IMG/shaped glass.png" alt="mm frost" style="opacity: 35%; min-width: 100em; position: absolute; display: block; mix-blend-mode: linear;">
+    <img src="IMG/shaped glass.png" alt="mm frost" style="opacity: 20%; min-width: 100em; position: absolute; display: block; mix-blend-mode: luminosity;">
+    <img src="IMG/shaped glass.png" alt="mm frost" style="opacity: 50%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
+    </div>
+
+    <div id="frosty7" style="opacity: 0%; pointer-events: none; width: 1vw; position: absolute; display: block;" >
+    <img src="IMG/smaller scales frost.png" alt="mm frost" style="opacity: 15%; min-width: 100em; position: absolute; display: block; mix-blend-mode: linear;">
+    <img src="IMG/smaller scales frost.png" alt="mm frost" style="opacity: 20%; min-width: 100em; position: absolute; display: block; mix-blend-mode: luminosity;">
+    <img src="IMG/smaller scales frost.png" alt="mm frost" style="opacity: 10%; min-width: 100em; position: absolute; display: block; mix-blend-mode: screen;">
+    </div>
+
 
     <div id="base1" style="opacity: 0%; pointer-events: none;">
     <img src="IMG/lamp1.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
@@ -218,6 +281,34 @@
     <img src="IMG/lamp7.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
     <img src="IMG/lamp7.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
     </div>
+
+    <div id="base8" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp8.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp8.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp8.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+
+    <div id="base9" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp9.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp9.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp9.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+
+    <div id="base10" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp10.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp10.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp10.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+
+    <div id="base11" style="opacity: 0%; pointer-events: none;">
+    <img src="IMG/lamp11.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y;">
+    <img src="IMG/lamp11.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 150vh;">
+    <img src="IMG/lamp11.png" alt="mm lampy" style="background-repeat:repeat-y; opacity: 100%; height: 100vh; position: absolute; display: block; background-repeat: repeat-y; left: 75vh;">
+    </div>
+  
+  
+  
+  
   
     <!-- Canvas Container -->
     <canvas id="glcanvas"></canvas>
@@ -270,22 +361,36 @@
             <a href="pink.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Pink backdrop</button></a>
             <a href="grey.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Gray backdrop</button></a>
             <a href="chocolate.html"><button id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Chocolate backdrop</button></a>
-            <button onclick="Glitter()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Glitter</button>
+            <button onclick="Glitter()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Glitter stars</button>
+            <button onclick="Glitter2()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Glitter</button>
+            <button onclick="Bubbling()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Bubbles!</button>
             <button onclick="Rainbow()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Rainbow</button>
             <button onclick="rocking()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Rocks</button>
             <button onclick="purpling()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Purple gradient</button>
             <button onclick="waving()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Wavy</button>
             <button onclick="scaling()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Scales</button>
-            <button onclick="thebase()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 1</button>
-            <button onclick="thebase2()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 2</button>
-            <button onclick="thebase3()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 3</button>
-            <button onclick="thebase4()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 4</button>
-            <button onclick="thebase5()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 5</button>
-            <button onclick="thebase6()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 6</button>
-            <button onclick="thebase7()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 7</button>
+            <button onclick="frosted()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Frosted</button>
+            <button onclick="frosted2()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Pattern glass</button>
+            <button onclick="frosted3()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Mermaid glass</button>
+            <button onclick="frosted4()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Bubble glass</button>
+            <button onclick="frosted5()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Diamond glass</button>
+            <button onclick="frosted6()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Lined glass</button>
+            <button onclick="frosted7()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Small mermaid glass</button>
+            <button onclick="thebase()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Classic metal base</button>
+            <button onclick="thebase2()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Black matte base</button>
+            <button onclick="thebase3()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Galaxy style</button>
+            <button onclick="thebase4()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Limited edition wine red</button>
+            <button onclick="thebase5()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Limited edition mint</button>
+            <button onclick="thebase6()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Gold rocket</button>
+            <button onclick="thebase7()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Candle powered</button>
+            <button onclick="thebase8()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Metal tube base</button>
+            <button onclick="thebase9()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Rounded tube</button>
+            <button onclick="thebase10()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Long tube</button>
+            <button onclick="thebase11()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Mmm fesh</button>
 
 
-                <button id="btn-reset" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5">Reset Defaults</button>
+
+                <button id="btn-reset" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5" <button onclick="thebase7()" id="btn-black" class="col-span-2 py-2.5 bg-indigo-600 hover:bg-grey-700 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-indigo-500/20">Base 7</button>>Reset Defaults</button>
                 <button id="btn-export-4k" class="py-2 bg-white/10 hover:bg-white/15 rounded-lg text-sm transition-colors border border-white/5">Export 4K</button>
             </div>
 
@@ -362,6 +467,52 @@
             a = 1;
             console.log("glitter on");
             console.log(a);
+        };
+    
+    };
+
+     let glitter2;
+    function Glitter2() {
+        
+        console.log(glitter2);
+
+        if (glitter2 > 0){
+           
+        document.getElementById("sparkles2").style.opacity = "0%";
+        glitter2 = 0;
+        console.log("glitter2 off");
+        console.log(glitter2);
+
+        }
+
+        else{
+            document.getElementById("sparkles2").style.opacity = "30%";
+            glitter2 = 1;
+            console.log("glitter2 on");
+            console.log(glitter2);
+        };
+    
+    };
+
+     let bubbles;
+    function Bubbling() {
+        
+        console.log(bubbles);
+
+        if (bubbles > 0){
+           
+        document.getElementById("Bubbles").style.opacity = "0%";
+        bubbles = 0;
+        console.log("bubbles off");
+        console.log(bubbles);
+
+        }
+
+        else{
+            document.getElementById("Bubbles").style.opacity = "30%";
+            bubbles = 1;
+            console.log("bubbles on");
+            console.log(bubbles);
         };
     
     };
@@ -478,6 +629,168 @@
             thescales = 1;
             console.log("thescales on");
             console.log(thescales);
+        };
+    
+    };
+
+
+    let glass;
+    function frosted() {
+        
+        console.log(glass);
+
+        if (glass){
+           
+        document.getElementById("frosty").style.opacity = "0%";
+        glass = 0;
+        console.log("glass off");
+        console.log(glass);
+
+        }
+
+        else{
+            document.getElementById("frosty").style.opacity = "100%";
+            glass = 1;
+            console.log("glass on");
+            console.log(glass);
+        };
+    
+    };
+
+    let glass2;
+    function frosted2() {
+        
+        console.log(glass2);
+
+        if (glass2){
+           
+        document.getElementById("frosty2").style.opacity = "0%";
+        glass2 = 0;
+        console.log("glass2 off");
+        console.log(glass2);
+
+        }
+
+        else{
+            document.getElementById("frosty2").style.opacity = "100%";
+            glass2 = 1;
+            console.log("glass2 on");
+            console.log(glass2);
+        };
+    
+    };
+
+    let glass3;
+    function frosted3() {
+        
+        console.log(glass3);
+
+        if (glass3){
+           
+        document.getElementById("frosty3").style.opacity = "0%";
+        glass3 = 0;
+        console.log("glass3 off");
+        console.log(glass3);
+
+        }
+
+        else{
+            document.getElementById("frosty3").style.opacity = "50%";
+            glass3 = 1;
+            console.log("glass3 on");
+            console.log(glass3);
+        };
+    
+    };
+
+     let glass4;
+    function frosted4() {
+        
+        console.log(glass4);
+
+        if (glass4){
+           
+        document.getElementById("frosty4").style.opacity = "0%";
+        glass4 = 0;
+        console.log("glass4 off");
+        console.log(glass4);
+
+        }
+
+        else{
+            document.getElementById("frosty4").style.opacity = "100%";
+            glass4 = 1;
+            console.log("glass4 on");
+            console.log(glass4);
+        };
+    
+    };
+
+    let glass5;
+    function frosted5() {
+        
+        console.log(glass5);
+
+        if (glass5){
+           
+        document.getElementById("frosty5").style.opacity = "0%";
+        glass5 = 0;
+        console.log("glass5 off");
+        console.log(glass5);
+
+        }
+
+        else{
+            document.getElementById("frosty5").style.opacity = "100%";
+            glass5 = 1;
+            console.log("glass5 on");
+            console.log(glass5);
+        };
+    
+    };
+
+    let glass6;
+    function frosted6() {
+        
+        console.log(glass6);
+
+        if (glass6){
+           
+        document.getElementById("frosty6").style.opacity = "0%";
+        glass6 = 0;
+        console.log("glass6 off");
+        console.log(glass6);
+
+        }
+
+        else{
+            document.getElementById("frosty6").style.opacity = "100%";
+            glass6 = 1;
+            console.log("glass6 on");
+            console.log(glass6);
+        };
+    
+    };
+
+    let glass7;
+    function frosted7() {
+        
+        console.log(glass7);
+
+        if (glass7){
+           
+        document.getElementById("frosty7").style.opacity = "0%";
+        glass7 = 0;
+        console.log("glass7 off");
+        console.log(glass7);
+
+        }
+
+        else{
+            document.getElementById("frosty7").style.opacity = "100%";
+            glass7 = 1;
+            console.log("glass7 on");
+            console.log(glass7);
         };
     
     };
@@ -639,6 +952,98 @@
             thebaselamp7 = 1;
             console.log("thebase7 on");
             console.log(thebaselamp7);
+        };
+    
+    };
+
+    let thebaselamp8;
+    function thebase8() {
+        
+        console.log(thebaselamp8);
+
+        if (thebaselamp8){
+           
+        document.getElementById("base8").style.opacity = "0%";
+        thebaselamp8 = 0;
+        console.log("thebase8 off");
+        console.log(thebaselamp8);
+
+        }
+
+        else{
+            document.getElementById("base8").style.opacity = "100%";
+            thebaselamp8 = 1;
+            console.log("thebase8 on");
+            console.log(thebaselamp8);
+        };
+    
+    };
+
+    let thebaselamp9;
+    function thebase9() {
+        
+        console.log(thebaselamp9);
+
+        if (thebaselamp9){
+           
+        document.getElementById("base9").style.opacity = "0%";
+        thebaselamp9 = 0;
+        console.log("thebase9 off");
+        console.log(thebaselamp9);
+
+        }
+
+        else{
+            document.getElementById("base9").style.opacity = "100%";
+            thebaselamp9 = 1;
+            console.log("thebase9 on");
+            console.log(thebaselamp9);
+        };
+    
+    };
+
+    let thebaselamp10;
+    function thebase10() {
+        
+        console.log(thebaselamp10);
+
+        if (thebaselamp10){
+           
+        document.getElementById("base10").style.opacity = "0%";
+        thebaselamp10 = 0;
+        console.log("thebase10 off");
+        console.log(thebaselamp10);
+
+        }
+
+        else{
+            document.getElementById("base10").style.opacity = "100%";
+            thebaselamp10 = 1;
+            console.log("thebase10 on");
+            console.log(thebaselamp10);
+        };
+    
+    };
+
+    let thebaselamp11;
+    function thebase11() {
+        
+        console.log(thebaselamp11);
+
+        if (thebaselamp11){
+           
+        document.getElementById("base11").style.opacity = "0%";
+        thebaselamp11 = 0;
+        console.log("thebase11 off");
+        console.log(thebaselamp11);
+
+        }
+
+        else{
+            document.getElementById("base11").style.opacity = "100%";
+            thebaselamp11 = 1;
+            console.log("thebase11 on");
+            console.log(thebaselamp11);
         };
     
     };
